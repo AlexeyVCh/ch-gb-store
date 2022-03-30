@@ -1,18 +1,267 @@
 :root {
     --black-bkg: #222222;
+    --pink-bkg: #F1E4E6;
+
 }
 
 body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 17px;
+    font-style: normal;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+/* header */
+
 .header {
     background-color: var(--black-bkg);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__burger-button {
+    border: none;
+    background-color: transparent;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__nav {
+    display: none;
+}
+
+/* main index */
+
+.banner {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.banner__img {
+    width: 800px;
+    height: 765px;
+}
+
+.banner__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.banner__title-lower {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.banner__title-pink {
+    color: #F18B99;
+}
+
+.sales {
+    margin-bottom: 97px;
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    height: 260px;
+    width: 360px;
+    background-color: #4E4544;
+}
+
+.sales__text-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 105px;
+}
+
+.sales__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sales__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sales__item--woman {
+    background-image: url(../img/woman-sale.jpg);
+}
+
+.sales__item--man {
+    background-image: url(../img/man-deal.jpg);
+}
+
+.sales__item--kids {
+    background-image: url(../img/for-kids.jpg);
+}
+
+.sales__item--shoes {
+    background-image: url(../img/shoes.jpg);
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.products {
+    margin-bottom: 95px;
+}
+
+.products__wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.products__item-img {
+    margin-bottom: 25px;
+}
+
+.products__title {
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.products__sub-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.products__item-title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 13px;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+
+.products__item-text {
+    font-weight: 300;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    margin-right: 28px;
+}
+
+.products__item-price {
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.products__button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #F26376;
+    color: #F26376;
+    padding: 14px 39px;
+}
+
+.benefits {
+    background-color: var(--black-bkg);
+    padding-top: 130px;
+    padding-bottom: 104px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__item-img {
+    margin-bottom: 25px;
+}
+
+.benefits__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.benefits__item-text {
+    font-weight: 300;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
 }
