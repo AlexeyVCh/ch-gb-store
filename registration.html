@@ -89,19 +89,49 @@
             </nav>
         </div>
     </header>
+
     <main class="main">
         <section class="reg__title">
             <h1>registration</h1>
         </section>
-        <form action="#">
-            <div class="">
-                <fieldset>
-                    <legend>your name</legend>
-                    <input type="text">
-                    <input type="text">
-                </fieldset>
-            </div>
-        </form>
+        <section class="reg container">
+            <form class="reg__form" action="#">
+                <div class="reg__form-wrp">
+                    <div class="reg__form-name">
+                        <fieldset>
+                            <legend>
+                                <h3>your name</h3>
+                            </legend>
+                            <input class="reg__form-item" type="text" id="first-name" name="first-name"
+                                placeholder="First Name">
+                            <span class="visually-hidden">first name</span>
+                            <input class="reg__form-name-item" type="text" id="last-name" name="last-name"
+                                placeholder="Last Name">
+                            <span class="visually-hidden">last name</span>
+                        </fieldset>
+                    </div>
+                    <div class="reg__form-gender">
+                        <input class="reg__form-gender-item" type="radio" value="male" id="gender-male"
+                            name="gender-male">
+                        <label for="gender-male">Male</label>
+                        <input class="reg__form-gender-item" type="radio" value="female" id="gender-female"
+                            name="gender-female">
+                        <label for="gender-female">Female</label>
+                    </div>
+                    <div class="reg__form-details">
+                        <fieldset>
+                            <legend>
+                                <h3>login details</h3>
+                            </legend>
+                            <input class="reg__form-item" type="email" id="email" name="email" placeholder="Email">
+                            <span class="visually-hidden">email</span>
+                            <input class="reg__form-item" type="password" id="pass" name="pass" placeholder="Password">
+                        </fieldset>
+                    </div>
+                    <button type="button" class="reg__button">join now</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <section class="footer__header">

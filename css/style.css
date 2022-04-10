@@ -332,6 +332,9 @@ body {
     width: 360px;
 }
 
+/* registration main */
+
+
 /* footer */
 
 .footer__header {
@@ -407,6 +410,7 @@ body {
     position: absolute;
     border-radius: 0 15px 15px 0;
     border: none;
+    cursor: pointer;
 }
 
 .footer__bottom {
