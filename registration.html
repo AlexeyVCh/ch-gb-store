@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -90,7 +90,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="reg__main">
         <section class="reg__title">
             <h1>registration</h1>
         </section>
@@ -104,18 +104,17 @@
                             </legend>
                             <input class="reg__form-item" type="text" id="first-name" name="first-name"
                                 placeholder="First Name">
-                            <span class="visually-hidden">first name</span>
+                            <label for="first-name" class="visually-hidden">first name</label><br>
                             <input class="reg__form-name-item" type="text" id="last-name" name="last-name"
                                 placeholder="Last Name">
-                            <span class="visually-hidden">last name</span>
+                            <label for="last-name" class="visually-hidden">last name</label>
                         </fieldset>
                     </div>
                     <div class="reg__form-gender">
-                        <input class="reg__form-gender-item" type="radio" value="male" id="gender-male"
-                            name="gender-male">
+                        <input class="reg__form-gender-item" type="radio" value="male" id="gender-male" name="gender">
                         <label for="gender-male">Male</label>
                         <input class="reg__form-gender-item" type="radio" value="female" id="gender-female"
-                            name="gender-female">
+                            name="gender">
                         <label for="gender-female">Female</label>
                     </div>
                     <div class="reg__form-details">
@@ -123,14 +122,28 @@
                             <legend>
                                 <h3>login details</h3>
                             </legend>
-                            <input class="reg__form-item" type="email" id="email" name="email" placeholder="Email">
-                            <span class="visually-hidden">email</span>
+                            <input class="reg__form-item" type="email" id="email" name="email" placeholder="Email"><br>
+                            <label class="visually-hidden">email</label>
                             <input class="reg__form-item" type="password" id="pass" name="pass" placeholder="Password">
+                            <label class="visually-hidden">password</label>
                         </fieldset>
                     </div>
                     <button type="button" class="reg__button">join now</button>
                 </div>
             </form>
+            <div class="perks">
+                <ul class="perks__list">
+                    <h3 class="perks__header">LOYALTY HAS ITS PERKS</h3>
+                    <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                        these
+                        as soon as you join:</p>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
