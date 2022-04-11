@@ -1,0 +1,37 @@
+.banner {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.banner__img {
+    width: 800px;
+    height: 765px;
+}
+
+.banner__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.banner__title-lower {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.banner__title-pink {
+    color: #F18B99;
+}
