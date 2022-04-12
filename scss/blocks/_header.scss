@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--black-bkg);
+    background-color: $black-bkg;
 }
 
 .header__wrapper {
@@ -33,7 +33,7 @@
 
 .header__icon:hover,
 .header__icon:focus {
-    fill: var(--active-bkg);
+    fill: $active-bkg;
 }
 
 .header__link {
