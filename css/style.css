@@ -176,8 +176,7 @@ body {
   fill: white;
 }
 
-.header__icon:hover,
-.header__icon:focus {
+.header__icon:hover, .header__icon:focus {
   fill: #F16D7F;
 }
 
@@ -203,16 +202,16 @@ body {
   margin: 0;
 }
 
-.nav-item__item:hover {
+.header .nav-item__item:hover {
   cursor: pointer;
 }
 
-.header__burger-button:hover + .header__nav,
-.header__burger-button:focus + .header__nav {
+.header .header__burger-button:hover + .header__nav,
+.header .header__burger-button:focus + .header__nav {
   display: block;
 }
 
-.header__nav:hover {
+.header .header__nav:hover {
   display: block;
 }
 
@@ -422,8 +421,7 @@ body {
   padding: 14px 39px;
 }
 
-.products__button:hover,
-.products__button:focus {
+.products__button:hover, .products__button:focus {
   color: white;
   background-color: #F16D7F;
 }
