@@ -11,8 +11,12 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include table {
+            padding: 0 16px 0 16px;
+            margin: 0 16px 0 16px;
+        }
     }
-    
+
     &__item {
         display: flex;
         flex-direction: column;

@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>chbgstore</title>
 </head>
 
@@ -18,7 +17,7 @@
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__container">
-                <a href="./index.html">
+                <a class="header__logo-link" href="./index.html">
                     <img class="header__logo" src="img/logo.png" alt="logo">
                 </a>
                 <svg class="header__icon" width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +33,72 @@
                             <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z">
                         </svg>
                     </button>
+                    <nav class="header__nav">
+                        <h2 class="header__nav-title">menu</h2>
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item nav-item">
+                                <h3 class="nav-item__title"><a class="nav-item__title-link" href="#">
+                                        man</a></h3>
+                                <ul class="nav-item__list">
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Accessories</a>
+                                    </li>
+                                    <li class="nav-item__item"><a class="nav-item__item-link" href="#">Bags</a></li>
+                                    <li class="nav-item__item"><a class="nav-item__item-link" href="#">Denim</a>
+                                    </li>
+                                    <li class="nav-item__item"><a class="nav-item__item-link" href="#">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item nav-item">
+                                <h3 class="nav-item__title">
+                                    <a class="nav-item__title-link" href="#">woman</a>
+                                </h3>
+                                <ul class="nav-item__list">
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Accessories</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Polos</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item nav-item">
+                                <h3 class="nav-item__title">
+                                    <a class="nav-item__title-link" href="#">kids</a>
+                                </h3>
+                                <ul class="nav-item__list">
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Accessories</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Polos</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Shirts</a>
+                                    </li>
+                                    <li class="nav-item__item">
+                                        <a class="nav-item__item-link" href="#">Bags</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </li>
                 <li>
                     <a href="./registration.html" class="header__link">
@@ -54,41 +119,6 @@
                     </a>
                 </li>
             </ul>
-            <nav class="header__nav">
-                <h2 class="header__nav-title">navigation</h2>
-                <ul class="header__nav-list">
-                    <li class="header__nav-item nav-item">
-                        <h3 class="nav-item__title">man</h3>
-                        <ul class="nav-item__list">
-                            <li class="nav-item__item">Accessories</li>
-                            <li class="nav-item__item">Bags</li>
-                            <li class="nav-item__item">Denim</li>
-                            <li class="nav-item__item">T-Shirts</li>
-                        </ul>
-                    </li>
-                    <li class="header__nav-item nav-item">
-                        <h3 class="nav-item__title">woman</h3>
-                        <ul class="nav-item__list">
-                            <li class="nav-item__item">Accessories</li>
-                            <li class="nav-item__item">Jackets & Coats</li>
-                            <li class="nav-item__item">Polos</li>
-                            <li class="nav-item__item">T-Shirts</li>
-                            <li class="nav-item__item">Shirts</li>
-                        </ul>
-                    </li>
-                    <li class="header__nav-item nav-item">
-                        <h3 class="nav-item__title">kids</h3>
-                        <ul class="nav-item__list">
-                            <li class="nav-item__item">Accessories</li>
-                            <li class="nav-item__item">Jackets & Coats</li>
-                            <li class="nav-item__item">Polos</li>
-                            <li class="nav-item__item">T-Shirts</li>
-                            <li class="nav-item__item">Shirts</li>
-                            <li class="nav-item__item">Bags</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
 

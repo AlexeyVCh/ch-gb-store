@@ -11,6 +11,19 @@
         height: 260px;
         width: 360px;
         background-color: #4E4544;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include table {
+            height: 167px;
+            width: 32%;
+        }
+
+        @include mobile {
+            width: 100%;
+            height: 247px;
+        }
     }
     
     &__text-wrp {
@@ -55,5 +68,13 @@
         width: 100%;
         height: 180px;
         margin-top: 30px;
+
+        @include table {
+            height: 117px;
+        }
+
+        @include mobile {
+            height: 111px;
+        }
     }
 }

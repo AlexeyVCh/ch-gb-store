@@ -8,6 +8,14 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+
+    @include table {
+        margin: 0 16px 0 16px;
+    }
+
+    @include mobile {
+        margin: 0 16px 0 16px;
+    }
 }
 
 .visually-hidden {

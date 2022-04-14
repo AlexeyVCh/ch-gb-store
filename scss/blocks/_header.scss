@@ -1,5 +1,12 @@
 .header {
     background-color: $black-bkg;
+    @include table {
+        padding: 0 32px 0 32px;
+    }
+    
+    @include mobile {
+        padding: 0 16px 0 16px;
+    }
 
     &__wrapper {
         display: flex;
@@ -24,6 +31,13 @@
         background-color: transparent;
         cursor: pointer;
     }
+
+    &__burger-button:hover,
+    &__burger-button:focus {
+        cursor: pointer;
+        outline: none;
+    }
+
     
     &__icon {
         fill: white;
@@ -45,9 +59,10 @@
         min-height: 764px;
         right: 0;
         top: 75px;
-        background-color: #FFFFFF;
+        background-color: white;
         padding: 0 0 0 34px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        z-index: 100;
     }
     
     &__nav-list {
@@ -55,17 +70,14 @@
         padding: 0;
         margin: 0;   
     }
-    
-    .nav-item__item:hover {
-        cursor: pointer;
-    }
-    
-    .header__burger-button:hover +.header__nav,
-    &__burger-button:focus +&__nav {
+
+    &__burger-button:hover+.header__nav,
+    .header__burger:focus+.header__nav {
         display: block;
     }
-    
-    .header__nav:hover {
+
+    &__nav:focus,
+    &__nav:hover {
         display: block;
     }
 }
