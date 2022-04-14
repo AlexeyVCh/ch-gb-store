@@ -61,7 +61,7 @@
     }
     
     .header__burger-button:hover +.header__nav,
-    .header__burger-button:focus +.header__nav {
+    &__burger-button:focus +&__nav {
         display: block;
     }
     

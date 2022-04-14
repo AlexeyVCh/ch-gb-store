@@ -207,7 +207,7 @@ body {
 }
 
 .header .header__burger-button:hover + .header__nav,
-.header .header__burger-button:focus + .header__nav {
+.header__burger-button:focus + .header__nav {
   display: block;
 }
 
