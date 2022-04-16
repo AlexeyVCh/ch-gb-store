@@ -1,0 +1,40 @@
+.nav-item {
+
+    &__title {
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+    &__title-link {
+        text-decoration: none;
+        color: $active-bkg;
+    }
+
+    &__title-link:hover,
+    &__title-link:focus {
+        color: $active-bkg;
+    }
+
+    &__title-link:active {
+        color: white;
+    }
+
+    &__item {
+        margin-top: 11px;
+        padding-left: 21px;
+    }
+
+    &__item-link {
+        text-decoration: none;
+        color: gray;
+    }
+
+    &__item-link:hover,
+    &__item-link:focus {
+        color: gray;
+    }
+
+    &__item-link:active {
+        color: white;
+    }
+}

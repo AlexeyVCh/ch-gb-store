@@ -1,37 +1,57 @@
 .banner {
     display: flex;
     margin-bottom: 64px;
-}
+    background-color: #F1E4E6;
 
-.banner__img {
-    width: 800px;
-    height: 765px;
-}
+    &__img {
+        width: 800px;
+        height: 765px;
 
-.banner__title-wrp {
-    flex-grow: 1;
-    background-color: $pink-bkg;
-    padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
-}
+        @include table {
+            width: 50%;
+            height: 100%;
+        }
 
-.banner__title {
-    font-family: Lato;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
-    text-transform: uppercase;
-}
+        @include mobile {
+            display: none;
+        }
+    }
+    
+    &__title-wrp {
+        flex-grow: 1;
+        background-color: $pink-bkg;
+        padding: 0 0 0 92px;
+        display: flex;
+        align-items: center;
 
-.banner__title-lower {
-    font-family: Lato;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    display: block;
-}
+        @include table {
+            padding-left: 0 0 0 67px;
+        }
 
-.banner__title-pink {
-    color: #F18B99;
+        @include mobile {
+            height: 363px;
+            padding: 148px 56px 148px 83px;
+            max-width: 100%;
+        }
+    }
+    
+    &__title {
+        font-family: Lato;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
+    
+    &__title-lower {
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        display: block;
+    }
+    
+    &__title-pink {
+        color: #F18B99;
+    }
 }
