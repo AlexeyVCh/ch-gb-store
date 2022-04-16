@@ -1,15 +1,17 @@
 .banner {
     display: flex;
     margin-bottom: 64px;
+    background-color: #F1E4E6;
 
-    @include table
     &__img {
         width: 800px;
         height: 765px;
+
         @include table {
-            width: 370px;
-            height: 368px;
+            width: 50%;
+            height: 100%;
         }
+
         @include mobile {
             display: none;
         }
@@ -21,6 +23,10 @@
         padding: 0 0 0 92px;
         display: flex;
         align-items: center;
+
+        @include table {
+            padding-left: 0 0 0 67px;
+        }
 
         @include mobile {
             height: 363px;
