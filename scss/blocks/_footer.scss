@@ -81,14 +81,18 @@
         cursor: pointer;
     }
     
-    &__bottom {
+    &__bottom-wrp {
         display: flex;
         justify-content: space-between;
         background-color: $black-bkg;
+        padding: 0 235px 0 235px;
+
+        @include table {
+            padding: 0 32px 0 32px;
+        }
     }
     
     &__bottom-text {
-        padding-left: 235px;
         padding-top: 35px;
         padding-bottom: 30px;
         color: #FBFBFB;
@@ -97,7 +101,6 @@
     &__bottom-list {
         display: flex;
         justify-content: space-between;
-        padding-right: 235px;
         padding-top: 30px;
         padding-bottom: 30px;
     }

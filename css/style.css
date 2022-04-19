@@ -658,14 +658,20 @@ body {
   cursor: pointer;
 }
 
-.footer__bottom {
+.footer__bottom-wrp {
   display: flex;
   justify-content: space-between;
   background-color: #222222;
+  padding: 0 235px 0 235px;
+}
+
+@media (max-width: 1599px) {
+  .footer__bottom-wrp {
+    padding: 0 32px 0 32px;
+  }
 }
 
 .footer__bottom-text {
-  padding-left: 235px;
   padding-top: 35px;
   padding-bottom: 30px;
   color: #FBFBFB;
@@ -674,7 +680,6 @@ body {
 .footer__bottom-list {
   display: flex;
   justify-content: space-between;
-  padding-right: 235px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
